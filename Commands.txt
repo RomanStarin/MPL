@@ -1,0 +1,25 @@
+git init - иницилизация локального репозитория
+git add
+git commit -m ""
+git remote add origin https://github.com/RomanStarin/MPL.git
+git push -u origin master
+git checkout -b develop
+git checkout -b developChild
+git push -set-upstream origin developChild
+git add .
+git commit -m "Add new line"
+git push
+git clone https://github.com/RomanStarin/MPL.git
+git checkout -b developChildTwo
+git push -set-upstream origin developChildTwo
+git add .
+git commit -m "Added a new line to developChildTwo branch"
+git push
+git checkout develop
+git merge developChild
+git push
+git merge developChildTwo
+git pull
+git add .
+git commit
+git push
